@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Menu</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js" integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html{
+            overflow-x: hidden;
+        }
+
+        body{
+            overflow-x: hidden;
+        }
+
+
+        /* ------header ----- */
+
+        .header{
+            background-color: #caf0f8;
+        }
+
+        .header-container{
+            max-width: 1430px;
+            width: 100%;
+            height: 50px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-list{
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-list{
+            list-style-type: none;
+        }
+
+        .navbar-links{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+
+
+
+
+        /* ------header ----- */
+
+
+
+        .hero-section, .demo-section{
+            background-color: #edf6f9;
+            height: 240px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+        }
+
+        .demo-section{
+            background-color: #ffddd2;
+        }
+
+
+        .phone-nav{
+            display: none;
+        }
+
+
+        .phone-nav .fa-x{
+            display: none;
+        }
+
+
+        @media(max-width: 600px) {
+
+
+
+            .phone-nav{
+                display: block;
+                cursor: pointer;
+            }
+
+            .phone-nav .fa-bars{
+                display: block;
+            }
+
+            .header{
+                position: relative;
+            }
+
+            .navbar{
+                width: 100%;
+                height: 100vh;
+                background-color: #e46c44;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transform: translateX(100%);
+                transition: all 0.5s linear;
+                visibility: hidden;
+                opacity: 0;
+                pointer-events: none;
+            }
+
+            .nav-list {
+                align-items: center;
+                flex-direction: column;
+                
+            }
+
+        .header.active .navbar{
+            visibility: visible;
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateX(0);
+        }
+
+        .header.active .phone-nav{
+            display: block;
+            z-index: 9;
+            cursor: pointer;
+        }
+
+        .header.active .phone-nav .fa-x{
+            display: block;
+        }
+
+        .header.active .phone-nav .fa-bars{
+            display: none;
+        }
+            
+        }
+
+
+    </style>
+
+
+    <!-- ------------ Start Header ------------------ -->
+
+    <header class="header">
+        <div class="header-container">
+
+            <h2>LOGO</h2>
+
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a class="navbar-links" href="#">Home</a></li>
+                <li><a class="navbar-links" href="#">About</a></li>
+                <li><a class="navbar-links" href="#">Services</a></li>
+                <li><a class="navbar-links" href="#">Gallery</a></li>
+                <li><a class="navbar-links" href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- phone -->
+
+        <div class="phone-nav">
+
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-x"></i>
+
+        </div>
+
+        </div>
+    </header>
+
+
+     <!-- ------------ End Header ------------------ -->
+
+
+     <!-- ----------- Start Hero Section ----------------- -->
+
+    <section class="hero-section">
+
+        <div class="hero">
+
+            <p>Hero Section</p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ----------- End Hero Section ----------------- -->
+
+
+
+
+<!-- ----------- Start demo Section ----------------- -->
+
+
+
+     <section class="demo-section">
+
+        <div class="demo">
+
+            <p>Demo Section</p>
+
+        </div>
+
+    </section>
+
+
+
+     <!-- ----------- End demo Section ----------------- -->
+    
+
+<script>
+    const mobile_nav = document.querySelector(".phone-nav");
+    const nav_header = document.querySelector(".header");
+
+    const toggle = ()=>{
+        nav_header.classList.toggle("active");
+    }
+
+
+    mobile_nav.addEventListener('click', () => toggle());
+</script>     
+</body>
+</html>

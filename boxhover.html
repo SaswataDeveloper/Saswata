@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Hover Content</title>
+</head>
+<body>
+
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+        .container{
+            max-width: 1280px;
+            width: 100%;
+            margin: auto;
+            padding: 50px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 15px;
+        }
+
+        .main-box{
+            
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .main-box .box-content{
+            position: absolute;
+            left: 50%;
+            top: -50%;
+            transform: translate(-50%, -50%);
+            height: 100%;
+            width: 100%;
+            background-color: #0000008c;
+            color: #fff;
+            padding: 10px 50px;
+            opacity: 0;
+            transition: all 0.5s ease-in-out;
+            z-index: 11;
+        }
+
+        .main-box:hover .box-content{
+            top: 50%;
+            opacity: 1;
+        }
+
+
+    </style>
+
+
+    <section class="main-container">
+
+        <div class="container">
+
+            <div class="main-box">
+
+                <img src="https://images.pexels.com/photos/35558953/pexels-photo-35558953.jpeg" alt="" width="100%">
+
+
+                <div class="box-content">
+
+                    <h1>Heading</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="main-box">
+
+                <img src="https://images.pexels.com/photos/35558953/pexels-photo-35558953.jpeg" alt="" width="100%">
+
+
+                <div class="box-content">
+
+                    <h1>Heading</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="main-box">
+
+                <img src="https://images.pexels.com/photos/35558953/pexels-photo-35558953.jpeg" alt="" width="100%">
+
+
+                <div class="box-content">
+
+                    <h1>Heading</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="main-box">
+
+                <img src="https://images.pexels.com/photos/35558953/pexels-photo-35558953.jpeg" alt="" width="100%">
+
+
+                <div class="box-content">
+
+                    <h1>Heading</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    
+</body>
+</html>

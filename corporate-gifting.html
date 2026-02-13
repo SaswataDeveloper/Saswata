@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corporate Gifting</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js" integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .about{
+            background: #575757;
+            background: linear-gradient(358deg,rgba(87, 87, 87, 1) 0%, rgba(18, 17, 17, 1) 100%);
+            color: #fff;
+        }
+
+        .container{
+            max-width: 1280px;
+            width: 100%;
+            margin: auto;
+        }
+
+        .about-se{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px 80px;
+            padding: 50px 30px;
+        }
+
+        .left-img{
+            padding: 35px 0;
+        }
+
+        .right-contant{
+            padding: 35px 0;
+        }
+
+        .right-contant p{
+           font-size: 20px;
+           line-height: 30px;
+        }
+
+
+        .btn-read{
+           background-color: #FFD43B;
+           padding: 15px 30px;
+           border-radius: 5px;
+           border: none;
+           transition: all 0.5s ease-in-out;
+           cursor: pointer;
+           font-size: 18px;
+        }
+
+        .btn-read:hover{
+           
+            transform: translateY(-5px);
+            overflow: hidden;
+        }
+
+        .heading{
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .heading h1{
+          font-size: 40px;
+        }
+
+        .heading p{
+            font-size: 20px;
+            padding: 10px 0;
+            line-height: 30px;
+        }
+
+        .solution{
+            background: linear-gradient(358deg,rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('https://linclimited.com/wp-content/uploads/2025/09/Linc_1920X390250922B0101-01.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #fff;
+            padding: 30px 10px 70px;
+        }
+
+        .tree-card .card{
+            display: flex;
+            gap: 0 15px;
+        }
+
+        .card-content h2{
+            position: relative;
+        }
+
+        .card-content h2::before{
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: -10px;
+            background-color: #ff8c32;
+            height: 3px;
+            width: 100px;
+
+        }
+        
+
+        .tree-card {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+
+        .card-content p {
+            font-size: 18px;
+            padding: 15px 0;
+            line-height: 30px;
+        }
+
+
+
+        /* ---------- Tablet ---------- */
+@media (max-width: 1024px) {
+  
+   .left-img img{
+     max-width: 100%;
+   } 
+
+  .about-se {
+    gap: 40px;
+  }
+
+  .right-contant p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.banner{
+  background:
+  linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+  url("https://linclimited.com/wp-content/uploads/2025/09/Linc_1920X390250922B0101-01.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 0 15px;
+
+}
+
+.breadcrumb ul{
+  display: flex;
+}
+
+.breadcrumb ul li{
+  list-style-type: none;
+  padding: 0 2px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.banner h1 {
+    font-size: 45px;
+    line-height: 50px;
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 768px) {
+  .about-se {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 25px;
+  }
+
+  .left-img,
+  .right-contant {
+    padding: 0;
+  }
+
+  .right-contant p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  /* .tree-card {
+    display: flex;
+    flex-wrap: wrap;
+            
+  } */
+}
+
+
+
+    </style>
+
+
+<!-- banner -->
+
+<section class="banner">
+
+   <div class="container">
+
+      <div class="breadcrumb">
+
+        <ul>
+          <li>Home</li>
+          <li><span>/</span></li>
+          <li>Corporate Gifting</li>
+        </ul>
+
+      </div>
+
+      <h1>Corporate Gifting</h1>
+
+   </div>
+
+</section>
+
+
+
+<!-- banner -->
+
+
+ <!-- About Section -->
+
+
+ <section class="about">
+
+    <div class="container">
+
+        <div class="about-se">
+
+            <div class="left-img">
+                <img src="https://linclimited.com/wp-content/uploads/2025/09/1.png" />
+            </div>
+
+            <div class="right-contant">
+
+                <p>At Linc, we believe that a great gift is worth a thousand words. Our range is more than just a gift; it’s showing gratitude, celebrating success, and developing long-lasting relationships. Corporate gifting by Linc portrays an emotion of thoughtfulness quality, and professionalism on every front, be it for excellence, milestones, or deserving appreciation amongst clients.</p>
+
+                <br/>
+
+
+                <button class="btn-read">Read More</button>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+ </section>
+
+
+ <!-- SOLUTIONS -->
+
+
+ <section class="solution">
+
+
+    <div class="container">
+
+        <div class="main-section">
+
+            <div class="heading">
+
+                <h1>SOLUTIONS</h1>
+
+                <p>Our solutions are designed to meet diverse corporate needs, whether you’re gifting at
+                scale or creating something uniquely personalised.</p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="tree-card">
+
+            <div class="card">
+                <div class="icon">
+
+                    <h1><i class="fa-solid fa-map-pin"></i></h1>
+
+                </div>
+
+                <div class="card-content">
+
+                    <h2>LOGO PRINTING</h2>
+                    <br/>
+                    <p>Customise your gifts with brand
+                    logos, messages, or packaging to
+                    create a strong and lasting brand
+                    recall.</p>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="card">
+                <div class="icon">
+
+                    <h1><i class="fa-solid fa-gift"></i></h1>
+
+                </div>
+
+                <div class="card-content">
+
+                    <h2>CORPORATE GIFT BOXES</h2>
+                    <br/>
+                    <p>Curated gift boxes featuring premium
+                    LINC products—ideal for festive
+                    gifting, onboarding kits, and special
+                    occasions.</p>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="card">
+                <div class="icon">
+
+                    <h1><i class="fa-brands fa-first-order"></i></h1>
+
+                </div>
+
+                <div class="card-content">
+
+                    <h2>BULK ORDERS</h2>
+                    <br/>
+                    <p>Efficient, scalable gifting solutions for
+                    large teams, events, and corporate
+                    campaigns—without compromising on
+                    quality or timelines</p>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+ </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #1e1e1e;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .testimonial-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 100px 40px;
+      background: #2b2b2b;
+      border-radius: 30px;
+      border: 1px solid #ff8c32;
+      position: relative;
+      text-align: center;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .testimonial-avatar {
+      position: absolute;
+      top: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #2b2b2b;
+      padding: 6px;
+      border-radius: 50%;
+    }
+
+    .testimonial-avatar img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .testimonial-text {
+      font-size: 20px;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 40px auto 30px;
+      color: #eaeaea;
+      transition: opacity 0.5s ease;
+    }
+
+    .testimonial-dots {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .testimonial-dots span {
+      width: 10px;
+      height: 10px;
+      background: #777;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .testi {
+      padding: 0 15px 55px;
+    }
+
+    .testimonial-dots span.active {
+      background: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .testimonial-text {
+        font-size: 16px;
+      }
+    }
+
+
+
+    /* gifting css */
+
+    .gifting-range{
+      background-color: #eaeaea;
+      padding: 50px 20px;
+    }
+
+    .gifting-container{
+       max-width: 1280px;
+       width: 100%;
+       margin: 0 auto;
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+       gap: 25px;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .gifting-content h1 {
+      font-size: 40px;
+      letter-spacing: 1px;
+      position: relative;
+    }
+
+    .gifting-content p{
+      color: #000;
+    }
+
+    .gifting-content h1::after{
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      background-color: #ff8c32;
+      border-radius: 5px;
+      width: 210px;
+      height: 4px;
+      content: "";
+}
+
+    .gifting-content p{
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 30px;
+    }
+
+    .gifting-content button{
+      background: #FFD43B;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      font-size: 25px;
+    }
+
+    .gifting-image img{
+      max-width: 100%;
+    }
+
+  </style>
+
+
+  <!-- DISCOVER GIFTING RANGE -->
+
+
+
+   <div class="gifting-range">
+
+       <div class="gifting-container">
+
+
+          <div class="gifting-content">
+
+            <h1>DISCOVER GIFTING RANGE</h1>
+            <br>
+            <br>
+            <p>Explore LINC’s complete corporate gifting collection,
+            including premium stationery, writing instruments,
+            and curated gift sets.</p>
+            <br>  
+            <br>
+            <button><i class="fa-solid fa-download"></i> Download Now</button>
+            <br>
+            <br>  
+            <p>Download our Corporate Gifting Catalogue to view products, combinations,
+              and customisation options.</p>
+
+          </div>
+
+          <div class="gifting-image">
+
+            <img src="https://linclimited.com/wp-content/uploads/2025/09/1.png" />
+
+          </div>
+
+
+       </div>
+   </div>
+
+
+ 
+ 
+
+  <!-- TESTIMONIAL -->
+
+  <div class="testi">
+
+    <div class="heading">
+
+      <h1 style="color: #fff;">TESTIMONIAL</h1>
+      <p style="color: #fff; font-size: 20px;">Hear from brands that trust LINC for their corporate gifting needs—because
+      real experiences speak louder than words.</p>
+
+    </div>
+
+    <section class="testimonial-section">
+
+    
+
+    <div class="testimonial-avatar">
+      <img id="avatar" src="" alt="User">
+    </div>
+
+    <p class="testimonial-text" id="text"></p>
+
+    <div class="testimonial-dots" id="dots"></div>
+
+  </section>
+
+  </div>
+
+
+
+
+  <!-- ---------------CASE------------------ -->
+
+
+  <style>
+
+    .CASE{
+      background-color: #000;
+      padding: 80px 10px;
+    }
+
+    .CASE .heading h1, h2, p{
+      color: #fff;
+    }
+
+    .CASE ul li {
+      color: #ffff;
+      list-style-type: square;
+      padding: 8px 0;
+    }
+
+    .en{
+      border: 1px solid #cfcfcf;
+      border-radius: 25px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+      justify-content: center;
+      align-items: center;
+      padding: 50px 25px;
+      margin-top: 50px;
+      gap: 25px;
+    }
+
+    .bt button{
+      background: #ff8c32;
+      padding: 30px 60px;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+    }
+
+    .bb{
+      background: #2443c3;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      color: #fff;
+    }
+
+  </style>
+
+
+  <section class="CASE">
+
+
+    <div class="container">
+
+
+
+        <div class="tree-card">
+
+            <div class="card">
+                <div class="icon">
+
+                    <h1><i class="fa-solid fa-map-pin"></i></h1>
+
+                </div>
+
+                <div class="card-content">
+
+                    <h2>CASE STUDIES</h2>
+                    <br/>
+                      <p>See how organisations have successfully
+                      used LINC’s corporate gifting solutions to
+                      strengthen relationships, reward
+                      achievements, and elevate brand
+                      presence.</p>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="card">
+                <div class="icon">
+
+                    <h1><i class="fa-solid fa-gift"></i></h1>
+
+                </div>
+
+                <div class="card-content">
+
+                    <h2>KNOWLEDGE SHARING</h2>
+                    <br/>
+                    <p>Stay informed with expert insights on corporate
+                    gifting trends, best practices, and thoughtful
+                    gifting ideas to elevate your brand experience.</p>
+
+                    <ul>
+                      <li>Corporate gifting trends</li>
+                      <li>How to choose the right gift</li>
+                      <li>Gifting etiquette for clients & employees</li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="card">
+                <div class="icon">
+
+                    <h1><i class="fa-brands fa-first-order"></i></h1>
+
+                </div>
+
+                <div class="card-content">
+
+                    <h2>FAQS</h2>
+                    <br/>
+                    <p>Find quick answers to common queries about
+                    corporate gifting, bulk orders, customisation,
+                    delivery timelines, and more.</p>
+
+
+                    <ul>
+                      <li>What is the minimum order quantity?</li>
+                      <li>Can gifts be customised with our logo?</li>
+                      <li>What are the delivery timelines for bulk orders?</li>
+                      <li>Do you offer festive or occasion-based gifting?</li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container en">
+
+      <div class="bt">
+
+        <button>ENQUIRY</button>
+
+      </div>
+
+
+      <div class="Gift-with-Purpose">
+
+        <h2>Gift with Purpose.Gift with LINC.</h2>
+
+        <br>
+
+        <p>Let’s create meaningful gifting experiences that reflect your
+        brand’s values and professionalism.</p>
+
+        <br>
+
+        <button class="bb">CONTACT NOW</button>
+
+      </div>
+
+    </div>
+
+ </section>
+
+
+
+ <!-- ----------------------CASE--------------------- -->
+
+  <script>
+    const testimonials = [
+      {
+        text: "Hear from brands that trust LINC for their corporate gifting needs—because real experiences speak louder than words.",
+        img: "https://i.pravatar.cc/150?img=3"
+      },
+      {
+        text: "LINC helped us deliver meaningful gifts that truly impressed our partners and clients.",
+        img: "https://i.pravatar.cc/150?img=5"
+      },
+      {
+        text: "Exceptional quality, seamless service, and on-time delivery. Highly recommended!",
+        img: "https://i.pravatar.cc/150?img=8"
+      }
+    ];
+
+    const avatar = document.getElementById("avatar");
+    const text = document.getElementById("text");
+    const dotsContainer = document.getElementById("dots");
+
+    let currentIndex = 0;
+
+    // Create dots
+    testimonials.forEach((_, index) => {
+      const dot = document.createElement("span");
+      dot.addEventListener("click", () => {
+        currentIndex = index;
+        showTestimonial();
+      });
+      dotsContainer.appendChild(dot);
+    });
+
+    const dots = dotsContainer.querySelectorAll("span");
+
+    function showTestimonial() {
+      text.style.opacity = 0;
+
+      setTimeout(() => {
+        avatar.src = testimonials[currentIndex].img;
+        text.textContent = testimonials[currentIndex].text;
+
+        dots.forEach(dot => dot.classList.remove("active"));
+        dots[currentIndex].classList.add("active");
+
+        text.style.opacity = 1;
+      }, 300);
+    }
+
+    function autoSlide() {
+      currentIndex = (currentIndex + 1) % testimonials.length;
+      showTestimonial();
+    }
+
+    // Initial load
+    showTestimonial();
+
+    // Auto slide every 4 seconds
+    setInterval(autoSlide, 4000);
+  </script>
+    
+</body>
+</html>

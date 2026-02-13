@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid</title>
+</head>
+<body>
+
+
+    <style>
+
+        .main-container{
+            max-width: 1600px;
+            width: 100%;
+            border: 1px solid #bd0808; 
+            min-height: 100vh;
+            
+        }
+        .container{
+
+            max-width: 1280px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            grid-template-rows: repeat(2, 250px);
+            gap: 25px;
+            
+
+        }
+
+        box{
+            background-color: rgb(14, 15, 15);
+            color: aliceblue;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }    
+        
+    </style>
+
+
+     <div class="main-container">
+
+        <div class="container">
+        <box>1</box>
+        <box>2</box>
+        <!-- <box>3</box>
+        <box>4</box>
+        <box>5</box>
+        <box>6</box>
+        <box>7</box>
+        <box>8</box>
+        <box>9</box>
+        <box>10</box> -->
+    </div>
+
+     </div>
+    
+</body>
+</html>
