@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>GSAP Animation</title>
+
+  <style>
+    body {
+      height: 1500px;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+    }
+
+    .section {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-left: 50px;
+    }
+
+    .box {
+      width: 120px;
+      height: 120px;
+      background: linear-gradient(135deg, #ff416c, #ff4b2b);
+      border-radius: 20px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+    }
+
+    .box1 {
+      width: 120px;
+      height: 120px;
+      background: linear-gradient(135deg, #ff416c, #ff4b2b);
+      border-radius: 20px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section">
+    <div class="box"></div>
+  </div>
+
+
+
+  <div class="section">
+    <div class="box1"></div>
+  </div>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <!-- ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to(".box", {
+      x: 2000,
+      scale: 1.6,
+      rotation: 360,
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".section",
+        start: "top top",
+        end: "600",
+        scrub: 2,
+        pin: true
+      }
+    });
+  </script>
+
+</body>
+</html>
